@@ -16,6 +16,8 @@ name = "highlighter"
 version = "0.1.0-alpha"
 dependencies = [
  "highlighter-core",
+ "highlighter-languages",
+ "highlighter-target-html",
 ]
 
 [[package]]
@@ -26,7 +28,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "highlighter-examples"
+version = "0.1.0-alpha"
+dependencies = [
+ "highlighter",
+]
+
+[[package]]
 name = "highlighter-languages"
+version = "0.1.0-alpha"
+dependencies = [
+ "highlighter-core",
+]
+
+[[package]]
+name = "highlighter-target-html"
 version = "0.1.0-alpha"
 dependencies = [
  "highlighter-core",

@@ -3,4 +3,14 @@ members = [
     "packages/highlighter",
     "packages/highlighter-core",
     "packages/highlighter-languages",
+    "packages/highlighter-target-html",
 ]
+
+# Examples crate, not meant to be published 
+[package]
+name = "highlighter-examples"
+version = "0.1.0-alpha"
+edition = "2021"
+
+[dependencies]
+highlighter = { path = "packages/highlighter", version = "0.1.0-alpha" }
