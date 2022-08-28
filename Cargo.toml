@@ -9,8 +9,8 @@ members = [
 # Examples crate, not meant to be published 
 [package]
 name = "highlighter-examples"
-version = "0.1.0-alpha"
+version = "0.1.1-alpha"
 edition = "2021"
 
 [dependencies]
-highlighter = { path = "packages/highlighter", version = "0.1.0-alpha" }
+highlighter = { path = "packages/highlighter", version = "0.1.1-alpha" }

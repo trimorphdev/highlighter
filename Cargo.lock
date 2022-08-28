@@ -13,7 +13,7 @@ dependencies = [
 
 [[package]]
 name = "highlighter"
-version = "0.1.0-alpha"
+version = "0.1.1-alpha"
 dependencies = [
  "highlighter-core",
  "highlighter-languages",
@@ -22,28 +22,28 @@ dependencies = [
 
 [[package]]
 name = "highlighter-core"
-version = "0.1.0-alpha"
+version = "0.1.1-alpha"
 dependencies = [
  "regex",
 ]
 
 [[package]]
 name = "highlighter-examples"
-version = "0.1.0-alpha"
+version = "0.1.1-alpha"
 dependencies = [
  "highlighter",
 ]
 
 [[package]]
 name = "highlighter-languages"
-version = "0.1.0-alpha"
+version = "0.1.1-alpha"
 dependencies = [
  "highlighter-core",
 ]
 
 [[package]]
 name = "highlighter-target-html"
-version = "0.1.0-alpha"
+version = "0.1.1-alpha"
 dependencies = [
  "highlighter-core",
 ]

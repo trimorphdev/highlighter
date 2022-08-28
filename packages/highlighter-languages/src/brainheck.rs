@@ -5,7 +5,11 @@ pub struct Brainheck;
 
 impl Language for Brainheck {
     fn name(&self) -> String {
-        "Brainheck".to_string()
+        "brainheck".to_string()
+    }
+
+    fn names(&self) -> Vec<String> {
+        vec!["brainheck".to_string(), "bf".to_string()]
     }
 
     fn init(&self, cx: &mut highlighter_core::LexerContext) -> Result<(), highlighter_core::Error> {

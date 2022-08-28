@@ -1,6 +1,11 @@
 [package]
 name = "highlighter-languages"
-version = "0.1.0-alpha"
+description = "Officially maintained language extensions for Highlighter."
+license = "MIT"
+homepage = "https://github.com/trimorphdev/highlighter"
+repository = "https://github.com/trimorphdev/highlighter"
+readme = "../../README.md"
+version = "0.1.1-alpha"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -10,4 +15,4 @@ all-languages = ["brainheck"]
 brainheck = []
 
 [dependencies]
-highlighter-core = { path = "../highlighter-core", version = "0.1.0-alpha" }
+highlighter-core = { path = "../highlighter-core", version = "0.1.1-alpha" }
