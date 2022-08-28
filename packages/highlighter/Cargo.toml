@@ -10,10 +10,12 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
-default = ["all-languages"]
+default = ["all-languages", "target-html"]
 all-languages = ["brainheck"]
 brainheck = ["highlighter-languages/brainheck"]
+target-html = ["highlighter-target-html"]
 
 [dependencies]
 highlighter-core = { path = "../highlighter-core", version = "0.1.0-alpha" }
 highlighter-languages = { path = "../highlighter-languages", version = "0.1.0-alpha" }
+highlighter-target-html = { path = "../highlighter-target-html", version = "0.1.0-alpha", optional = true }
