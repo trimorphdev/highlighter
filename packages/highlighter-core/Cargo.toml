@@ -1,5 +1,9 @@
 [package]
 name = "highlighter-core"
+description = "The core library that Highlighter wraps."
+license = "MIT"
+homepage = "https://github.com/trimorphdev/highlighter"
+repository = "https://github.com/trimorphdev/highlighter"
 version = "0.1.0-alpha"
 edition = "2021"
 

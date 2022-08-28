@@ -1,15 +1,19 @@
 [package]
 name = "highlighter"
+description = "An extendable syntax highlighter written in Rust."
+license = "MIT"
+homepage = "https://github.com/trimorphdev/highlighter"
+repository = "https://github.com/trimorphdev/highlighter"
 version = "0.1.0-alpha"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
-default = ["all-languages"]
-all-languages = ["rust"]
-rust = ["highlighter-languages/rust"]
+# default = ["all-languages"]
+# all-languages = ["rust"]
+# rust = ["highlighter-languages/rust"]
 
 [dependencies]
 highlighter-core = { path = "../highlighter-core", version = "0.1.0-alpha" }
-highlighter-languages = { path = "../highlighter-languages", version = "0.1.0-alpha", features = [] }
+# highlighter-languages = { path = "../highlighter-languages", version = "0.1.0-alpha", features = [] }
