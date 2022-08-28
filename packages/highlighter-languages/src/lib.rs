@@ -1,6 +1,5 @@
 //! Official language extensions for Highlighter.
 
-use brainheck::Brainheck;
 use highlighter_core::{Token, Error, highlight, language::Language};
 
 #[cfg(feature = "brainheck")]
@@ -10,7 +9,7 @@ pub mod brainheck;
 pub fn language(name: &str) -> Option<Box<dyn Language>> {
     match name.to_lowercase().as_str() {
         #[cfg(feature = "brainheck")]
-        "brainheck" => Some(Box::new(Brainheck)),
+        "brainheck" => Some(Box::new(brainheck::Brainheck)),
         _ => None
     }
 }
