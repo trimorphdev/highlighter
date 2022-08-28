@@ -16,7 +16,6 @@ name = "highlighter"
 version = "0.1.0-alpha"
 dependencies = [
  "highlighter-core",
- "highlighter-languages",
 ]
 
 [[package]]
@@ -32,10 +31,6 @@ version = "0.1.0-alpha"
 dependencies = [
  "highlighter-core",
 ]
-
-[[package]]
-name = "highlighter-target-terminal"
-version = "0.1.0-alpha"
 
 [[package]]
 name = "memchr"
