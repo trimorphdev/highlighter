@@ -101,9 +101,11 @@ impl Lexer {
                         let mut captures = regex.capture_locations();
 
                         if let Some(m) = regex.captures_read_at(&mut captures, str, i) {
+                            if m.start() != i {
+                                continue;
+                            }
+
                             i = m.end();
-                            dbg!(m);
-                            //let captures = regex.captures(str).unwrap();
                             tokens.token(*scope, m.as_str());
                             continue 'str_iter;
                         }
@@ -113,9 +115,11 @@ impl Lexer {
                         let mut captures = pattern.regex.capture_locations();
 
                         if let Some(m) = regex.captures_read_at(&mut captures, str, i) {
+                            if m.start() != i {
+                                continue;
+                            }
+
                             i = m.end();
-                            dbg!(m);
-                            //let captures = regex.captures(str).unwrap();
                             (pattern.handler)(captures, &str.to_owned(), &mut tokens);
                             continue 'str_iter;
                         }
