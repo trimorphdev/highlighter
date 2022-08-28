@@ -153,6 +153,9 @@ pub enum Scope {
     /// A controlling keyword, such as `if`, `break`, `return`, `while`, etc.
     KeywordControl,
 
+    /// An operator keyword, such as `instanceof`, `as`, `instance`, `or`, etc.
+    KeywordOperator,
+
     /// An other keyword.
     KeywordOther,
 
@@ -190,6 +193,7 @@ impl Scope {
             Self::VariableLanguage => "variable_language",
             Self::VariableOther => "variable_other",
             Self::KeywordControl => "keyword_control",
+            Self::KeywordOperator => "keyword_operator",
             Self::KeywordOther => "keyword_other",
             Self::None => "none",
         }
