@@ -198,6 +198,41 @@ impl Scope {
             Self::None => "none",
         }
     }
+
+    /// Converts the [`Scope`]'s name to a kebab case string.
+    pub fn kebab_case(&self) -> &str {
+        match self {
+            Self::Comment => "comment",
+            Self::ConstantNumber => "constant-number",
+            Self::ConstantChar => "constant-char",
+            Self::ConstantLanguage => "constant-language",
+            Self::ConstantOther => "constant-other",
+            Self::NameFunction => "name-function",
+            Self::NameType => "name-type",
+            Self::NameTag => "name-tag",
+            Self::NameSection => "name-section",
+            Self::Invalid => "invalid",
+            Self::Deprecated => "deprecated",
+            Self::StorageType => "storage-type",
+            Self::StorageModifier => "storage-modifier",
+            Self::StringQuoted => "string-quoted",
+            Self::StringEvaluated => "string-evaluated",
+            Self::StringRegex => "string-regex",
+            Self::StringOther => "string-other",
+            Self::SupportFunction => "support-function",
+            Self::SupportType => "support-type",
+            Self::SupportConstant => "support-constant",
+            Self::SupportVar => "support-var",
+            Self::SupportOther => "support-other",
+            Self::VariableParameter => "variable-parameter",
+            Self::VariableLanguage => "variable-language",
+            Self::VariableOther => "variable-other",
+            Self::KeywordControl => "keyword-control",
+            Self::KeywordOperator => "keyword-operator",
+            Self::KeywordOther => "keyword-other",
+            Self::None => "none",
+        }
+    }
 }
 
 /// A language implementation for Highlighter.
