@@ -10,10 +10,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
-# default = ["all-languages"]
-# all-languages = ["rust"]
-# rust = ["highlighter-languages/rust"]
+default = ["all-languages"]
+all-languages = ["brainheck"]
+brainheck = ["highlighter-languages/brainheck"]
 
 [dependencies]
 highlighter-core = { path = "../highlighter-core", version = "0.1.0-alpha" }
-# highlighter-languages = { path = "../highlighter-languages", version = "0.1.0-alpha", features = [] }
+highlighter-languages = { path = "../highlighter-languages", version = "0.1.0-alpha" }
