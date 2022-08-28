@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "packages/highlighter",
+    "packages/highlighter-core",
+    "packages/highlighter-languages",
+    "packages/highlighter-target-terminal",
+]
